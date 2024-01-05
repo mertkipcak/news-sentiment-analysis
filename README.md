@@ -11,4 +11,20 @@ And finally I look at a slight tangent to see if S&P500 has any relationships wi
 I would like to further investigate the trens of the news sentiment and even make an app with it, however, the way I access the dataset is way too slow right now and each year is around 2.5TB of data (so no chance of storing locally). The main problem stems from pulling the data using "SELECT * FROM table" due to the implementation of GDELT library and then processing everything in python, being able to query the database directly would make the operations much faster. GDELT is expected to release a tool to more efficently access the data in 2024, will wait until then.
 
 ## Plots
-//TODO
+First, we look at the distribution of news published on the internet on a daily basis:
+![](./plots/event_count_piechart.png)
+
+We can also see a similar situation on the world map
+![](./plots/world_event_count.png)
+
+Now, we can look at the sentiments accross the world on 03/01/2024
+![](./plots/world_sentiment.png)
+![](./plots/top_countries.png)
+![](./plots/bottom_countries.png)
+
+The plots of average sentiments across the world and Turkey (the x-axis can be shown better, should be understandable nonetheless)
+![](./plots/average_tone_worldwide.png)
+![](./plots/average_tone_turkey.png)
+
+And finally news sentiment during Covid-19
+![](./plots/average_tone_covid.png)
